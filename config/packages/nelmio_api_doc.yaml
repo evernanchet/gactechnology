@@ -1,0 +1,13 @@
+nelmio_api_doc:
+    documentation:
+        host: localhost:8000
+        schemes: [ http ]
+        info:
+            title: My Api Test Ubitransport
+            description: Description des apis pour le test technique pour Ubitransport.
+            version: 1.0.0
+    areas: # to filter documented areas
+        path_patterns:
+            - ^/api(?!/doc$) # Accepts routes under /api except /api/doc
+            - ^/note
+            - ^/students
